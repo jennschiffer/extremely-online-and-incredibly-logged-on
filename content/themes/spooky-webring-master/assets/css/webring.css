@@ -1,0 +1,55 @@
+/** webring ghost theme css - @jennschiffer **/
+
+/** resets - are for people who put "i love coffee" in their twitter bios **/
+* { box-sizing: border-box; }
+html { background-color: #fff; margin: 0; padding: 0; border: 10px solid cyan; font-size: 1.5em; }
+body { margin: 0 auto; padding: 4em 2em; width: 100%; max-width: 1000px; font-family: monospace; font-size: 1em; }
+a { color: blue; text-decoration: underline; }
+section { margin: 4em 0; }
+footer { font-size: .8em; margin: 4em 0 0; }
+p { line-height: 1.5em; }
+
+.float-left { float: left; margin: auto 1em 1em auto; }
+.full-width { width: 100%; }
+
+blockquote { border-left: 3px solid lime; padding: 5px 20px; font-style: italic; background: #efefef; }
+
+img.left { float: left; margin: 0 10px 10px 0; }
+img.right { float: right; margin: 0 0 10px 10px; }
+
+/** header - jk about the coffee bio thing, coffee is fun and resets are p smart **/
+#site-head { text-align: center; margin: 0 auto 30px;}
+#site-head h1,
+#site-head h2 { font-size: 2.5em; margin: 0;}
+#site-head a { color: #000; text-decoration: none; }
+#site-head h2 { color: magenta; font-weight: normal; font-size: 1.5em; margin: 1em; }
+
+/** posts - where the wordsmithin' happens and dies **/
+.post-header > h2,
+h1.post-title { margin: 0;  }
+.post-header .post-meta,
+.post .post-meta { font-style: italic; letter-spacing: .1em }
+article { display: block; margin: 3em 0;}
+.post-content { margin: 2em 0; }
+.post-footer { background: magenta; padding: 3px 10px; }
+nav.pagination { display: block; text-align: center; font-weight: bold; }
+
+/** footer **/
+ul.social { list-style-type: none; margin: 20px 0 10px; padding: 0; }
+ul.social li a { display: block; padding: .3em 1em; }
+ul.social li:nth-child(n) { background: yellow; }
+ul.social li:nth-child(2n) { background: lime; }
+ul.social li a:hover { background: magenta; }
+footer .fire { text-align: center; }
+footer .fire img { display: inline-block; margin: 1em 2em; width: 75px; }
+
+/** stop the hot neon garbage **/
+.no-outline { outline: 0; }
+.no-show { display: hidden; }
+
+/** ~*responsive*~ #rwd #turnup **/
+@media all and (max-width: 250px) {
+  #site-head { font-size: .7em; }
+  h1.post-title { font-size: 1.3em; }
+  article { margin: 35px 0; }
+}
